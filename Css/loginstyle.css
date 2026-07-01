@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    background: linear-gradient(90deg, white 50%, #2563EB 50%)
+}
+
+
+/* LOGO SECTION */
+#logo{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    width: 40%;
+}
+
+#logo img{
+    height: 40px;
+    width: 40px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+}
+
+#logo h3 span{
+    color: #2563EB;
+    margin-left: 0;
+}
+/* LOGO SECTION */
+
+/* IMAGE SECTION */
+#login-img-div{
+    padding: 10px;
+    margin-left: 10%;
+    margin-top: 7%;
+    display: flex;
+    gap: 30%;
+}
+
+#login-img-div img{
+    height: 30%;
+    width: 35%;
+}
+/* IMAGE SECTION */
+
+/* LOGIN DIV */
+#login-div{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#login-div h5{
+    text-align: center;
+}
+
+#login-div label{
+    margin-top: 20px;
+}
+
+#login-div input{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#login-div button{
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #2563EB;
+    border: none;
+    color: white;
+    box-shadow: 2px 2px 1px 1px grey;
+}
+
+#login-div button:hover{
+    transform: scale(1.1);
+}
+
+#login-div a{
+    margin-left: 6px;
+}
+/* LOGIN DIV */
+
+/* MEDIA QUERIES */
+@media screen and (max-width:768px) {
+    body{
+       background: linear-gradient(360deg, white 100%);
+    }
+
+    #login-img-div{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    #login-div{
+        box-shadow: 2px 2px 1px 1px grey;
+        margin-bottom: 100px;
+    }
+}
+/* MEDIA QUERIES */

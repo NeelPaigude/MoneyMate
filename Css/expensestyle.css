@@ -1,0 +1,310 @@
+body{
+    margin: 0;
+    background-color: #F8FAFC;
+    font-family: "Outfit", sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* EXPENSE MESSAGE CSS */
+#warningAlert{
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    background-color: white;
+    color: red;
+}
+/* EXPENSE MESSAGE CSS */
+
+/* HEADER CSS */
+.header-div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+#logo h3 span{
+    color: #2563EB;
+    margin-left: 0;
+}
+
+#logo img{
+    height: 40px;
+    width: 40px;
+    margin-bottom: 5px;
+}
+
+#button-div{
+    display: flex;
+    gap: 20px;
+}
+
+.bbtn{
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    background: rgb(0,71,171);
+    background: linear-gradient(159deg, rgba(0,71,171,1) 0%, rgba(28,169,201,1) 100%);
+    color: #F8FAFC;
+    box-shadow: 2px 2px 1px 1px grey;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.bbtn img{
+    height: 20px;
+    width: 20px;
+}
+
+.bbtn:hover{
+    transform: scale(1.1);
+}
+/* HEADER CSS */
+
+
+/* INCOME CSS */
+.hero-div{
+    gap: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-div .sub-div{
+    background: rgb(0,71,171);
+    background: linear-gradient(159deg, rgba(0,71,171,1) 0%, rgba(28,169,201,1) 100%);
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 2px 2px 1px 1px grey;
+    width: fit-content;
+}
+
+#tincome{
+    height: fit-content;
+}
+
+#expense-div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+    align-items: flex-start;
+    width: fit-content;
+}
+
+#expense-div input{
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#expense-div label{
+font-size: 1.2rem;
+font-weight: 500; 
+}
+
+#expense-div textarea{
+    padding: 5px;
+    border-radius: 10px;
+    height: 100px;
+}
+
+#expense-div select{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#expense-div button{
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #7cfc00;
+    background-image: linear-gradient(315deg, #7cfc00 0%, #0bda51 74%);
+}
+
+#expense-div #clearexpense{
+    background-color: #e34234;
+    background-image: linear-gradient(315deg, #e34234 0%, #ff3800 74%);
+}
+
+#expense-div button:hover{
+    transform: scale(1.05);
+}
+
+#Expense-table{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    color: #475569;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 1px grey;
+    height: fit-content;
+}
+
+#Expense-table #Expense-Balance{
+    display: flex;
+    gap: 10px;
+}
+
+#Expense-table #Balance{
+    background-color: #7cfc00;
+    background-image: linear-gradient(315deg, #7cfc00 0%, #0bda51 74%);
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+#Expense-table #texpense{
+    background-color: #e34234;
+    background-image: linear-gradient(315deg, #e34234 0%, #ff3800 74%);
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.icon-circle{
+    width: 68px;
+    height: 68px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.25);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow:0 0 12px rgba(255,255,255,.15);
+    backdrop-filter: blur(6px);   /* Optional but looks nice */
+}
+
+.icon-circle i{
+    font-size: 30px;
+    color: white;
+}
+
+#Expense-table th{
+    border: 1px solid  #475569;
+}
+
+#Expense-table td{
+    border: 1px solid #475569;
+}
+/* INCOME CSS */
+
+/* BACK CSS */
+#back{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#back #prev-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 10px;
+    width: 150px;
+    background: rgb(0,71,171);
+    background: linear-gradient(159deg, rgba(0,71,171,1) 0%, rgba(28,169,201,1) 100%);
+    border: none;
+    box-shadow: 2px 2px 1px 1px grey;
+}
+
+#back a{
+    text-decoration: none;
+}
+
+#back a #prev-btn{
+    color: white;
+    font-size: 20px;
+}
+
+#back #prev-btn:hover{
+    transform: scale(1.1);
+}
+/* BACK CSS */
+
+/* FOOTER CSS */
+.footer{
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* FOOTER CSS 
+
+
+/* DARK MODE CSS */
+body.darktheme{
+    background-color: black;
+    color: white;
+}
+
+body.darktheme #Expense-table{
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body.darktheme #Expense-table th{
+    border: 1px solid white;
+}
+
+body.darktheme #Expense-table td{
+    border: 1px solid white;
+}
+
+body.darktheme .footer{
+    border-top: 1px solid white;
+}
+/* DARK MODE CSS */
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:768px) {
+    .header-div{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-div{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #Expense-table{
+        width: 100%;
+    }
+
+    #Expense-table #table-container{
+        overflow-x: auto;
+        width: 100%;
+    }
+
+}
+/* MEDIA QUERIES */

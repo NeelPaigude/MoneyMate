@@ -1,0 +1,314 @@
+body{
+    margin: 0;
+    background-color: #F8FAFC;
+    font-family: "Outfit", sans-serif;
+    animation: slideIn 1s ease-out;
+    scroll-behavior: smooth;
+}
+
+/* ANIMATIONS */
+@keyframes slideIn{
+    form{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* ANIMATIONS */
+
+/* HEADER CSS */
+.header-div{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.header-div #logo{
+    display: flex;
+    align-items: center;
+}
+
+.header-div #logo h3 span{
+    color: #2563EB;
+    margin-left: 0;
+}
+
+.header-div img{
+    height: 40px;
+    width: 40px;
+    margin-bottom: 10px;
+    margin-right: 2px;
+}
+
+.header-div #nav-bar{
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.header-div #nav-bar button{
+    background-color: #2563EB;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    width: 125px;
+    text-align: center;
+    box-shadow: 2px 2px 1px 1px grey;
+    border: none;
+}
+
+.header-div #nav-bar button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/* HEADER CSS  */
+
+/* HERO-SECTION CSS */
+.hero-div{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.hero-div h1{
+    margin: 20px;
+}
+
+.hero-div h1 span{
+    color: #2563EB;
+}
+
+.hero-div h3{
+    margin: 20px;
+}
+
+.hero-div button{
+    border-radius: 5px;
+    padding: 13px;
+    margin: 20px;
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 1px 1px grey;
+}
+
+.hero-div #lbtn{
+    background-color: #2563EB;
+}
+
+.hero-div button img{
+    margin-left: 5px;
+    height: 20px;
+    width: 25px;
+}
+
+.hero-div button:hover{
+    transform: scale(1.1);
+}
+/* HERO-SECTION CSS */
+
+/* FEATURES SECTION */
+#features-heading{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.features-div{
+    display: flex;
+    margin-top: 50px;
+    gap: 150px;
+    justify-content: center;
+}
+
+.f-cards{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px 1px grey;
+}
+
+.f-cards img{
+    height: 100px;
+    width: 100px;
+}
+
+.f-cards:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+/* FEATURES SECTION */
+
+/* ABOUT SECTION */
+.about-div{
+    margin: 50px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+}
+
+.about-div h2{
+    margin-bottom: 30px;
+}
+
+.about-div h5{
+    line-height: 1.8;
+    color: #475569;
+}
+
+.about-div h2 span{
+    color: #2563EB;
+}
+/* ABOUT SECTION */
+
+/* WHY CHOOSE SECTION */
+.whychoose-div{
+    margin: 50px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+}
+
+.whychoose-div h2{
+    margin-bottom: 30px;
+}
+
+.whychoose-div h5{
+    line-height: 1.8;
+    color: #475569;
+}
+
+.whychoose-div h2 span{
+    color: #2563EB;
+}
+/* WHY CHOOSE SECTION */
+
+/* CONTACT SECTION */
+.contact-div{
+    margin: 50px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 900px;
+}
+
+.contact-div h2{
+    margin-bottom: 30px;
+    align-self: center;
+}
+
+.contact-div h5{
+    line-height: 1.8;
+    color: #475569;
+}
+
+.contact-div ul{
+    display: flex;
+    gap: 50px;
+}
+
+/* CONTACT SECTION */
+
+/* FOLLOW SECTION */
+.follow-div{
+    margin: 50px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 900px;
+}
+
+.follow-div h2{
+    margin-bottom: 30px;
+    align-self: center;
+}
+
+.follow-div h5{
+    line-height: 1.8;
+    color: #475569;
+}
+
+.follow-div #followus-div{
+    display: flex;
+    list-style-type: none;
+    align-self: center;
+    gap: 200px;
+}
+
+.follow-div #followus-div img{
+    height: 50px;
+    width: 50px;
+}
+
+/* FOLLOW SECTION */
+
+/* MEDIA QUERIES */
+@media  screen and (max-width: 768px) {
+
+    .header-div{
+        flex-direction: column;
+    }
+
+    .header-div #nav-bar{
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .header-div #nav-bar button{
+        width: 100px;
+    }
+
+    .features-div{
+        flex-wrap: wrap;
+    }
+
+    .f-cards{
+        width: 304px;
+    }
+
+    .about-div{
+        margin-left:15px;
+    }
+    
+    .contact-div ul{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .follow-div #followus-div{
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        gap: 20px;
+    }
+
+}
+/* MEDIA QUERIES */

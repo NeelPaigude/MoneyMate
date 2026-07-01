@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>income-page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../Css/incomestyle.css">
+</head>
+<body class="darktheme">
+
+    <!-- HEADER DIV -->
+    <div class=".container-fluid header-div">
+        <div id="logo">
+                <img src="../Images/Money-Mate-Logo-img.png" alt=""><h3 id="bname">Money<span>Mate</span></h3>
+        </div>
+        <div id="button-div">
+                <button class="bbtn" id="dark">Dark Mode<img src="../Images/night-mode.png" alt=""></button> <button id="light" class="bbtn">Light Mode<img src="../Images/Light-mode.png" alt=""></button>
+        </div>
+    </div>
+
+    <!-- INCOME SECTION -->
+    <div class="container-fluid hero-div">
+
+        <div class=" sub-div">
+            <h2 >Add Income</h2>
+            <form id="income-form">
+                <label>Amount : </label> <input type="text" id="amount" required>
+                <label>Date : </label> <input type="date" id="date" required>
+                <label>Payment Method : </label> 
+                <select name="" id="pmethod">
+                    <option value="Cash">Cash</option>
+                    <option value="UPI">UPI Payment</option>
+                    <option value="Credit-Card">Credit Card</option>
+                    <option value="Debit-Card">Debit Card</option>
+                </select>
+                <label>Source : </label>
+                <select name="" id="Source">
+                    <option value="Salary">Salary</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Grants">Grants</option>
+                    <option value="Awards">Awards</option>
+                    <option value="Refunds">Refunds</option>
+                    <option value="Coupons">Coupons</option>
+                </select>
+                <label>Descriprtion (optional)</label>
+                <textarea name="" id="descriprtion" rows="5" cols="40"></textarea>
+                <button type="submit" id="addincome">+ Add Income</button>
+                <button id="clearincome">Clear All Data</button>
+            </form>
+        </div>
+
+        <div id="income-table">
+            <div id="tincome">
+                <div class="icon-circle">
+                    <i class="bi bi-cash-stack"></i>
+                </div>
+                <div id="tincome-info">
+                    <h2>Total Income</h2>
+                    <h3 id="income-total">₹0</h3>
+                </div>
+            </div>
+            <div id="table-container">    
+                <table cellpadding="25px">
+                    <thead>
+                        <tr>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Payment Method</th>
+                            <th>Source</th>
+                            <th>Descriprtion</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablebody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BACK SECTION -->
+    <div id="back">
+        <a href="../Html/dashboard.html"><button id="prev-btn">Back  ⬅</button></a>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <div class="container-fluid footer">
+        <h5>Track.Save.Grow</h5>
+        <h5>@2026 MoneyMate all rights reserved</h5>
+    </div>
+
+
+    <script src="../Javascript/income.js"></script>
+</body>
+</html>

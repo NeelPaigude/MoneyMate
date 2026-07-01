@@ -1,0 +1,297 @@
+body{
+    margin: 0;
+    background-color: #F8FAFC;
+    font-family: "Outfit", sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* HEADER CSS */
+.header-div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+#logo h3 span{
+    color: #2563EB;
+    margin-left: 0;
+}
+
+#logo img{
+    height: 40px;
+    width: 40px;
+    margin-bottom: 5px;
+}
+
+#button-div{
+    display: flex;
+    gap: 20px;
+}
+
+.bbtn{
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    background: rgb(0,71,171);
+    background: linear-gradient(159deg, rgba(0,71,171,1) 0%, rgba(28,169,201,1) 100%);
+    color: #F8FAFC;
+    box-shadow: 2px 2px 1px 1px grey;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.bbtn img{
+    height: 20px;
+    width: 20px;
+}
+
+.bbtn:hover{
+    transform: scale(1.1);
+}
+/* HEADER CSS */
+
+/* HERO CSS */
+.hero-div{
+    padding: 10px;
+}
+
+.hero-div #sub-div{
+    color: #475569;
+    padding: 15px;
+}
+/* HERO CSS */
+
+/* INCOME-EXPENSE CSS */
+.income-expense-div{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+
+.income-expense-div #Hexpense-div{
+    background-color: #e34234;
+    background-image: linear-gradient(315deg, #e34234 0%, #ff3800 74%);
+    padding: 15px;
+    width: 400px;
+    height: fit-content;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px 1px grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.income-expense-div #Hincome-div{
+    background-color: #7cfc00;
+    background-image: linear-gradient(315deg, #7cfc00 0%, #0bda51 74%);
+    padding: 20px;
+    width: 400px;
+    height: fit-content;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px 1px grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-circle{
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.2);
+
+    border: 1px solid rgba(255,255,255,0.25);
+
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-circle i{
+    font-size: 32px;
+    color: white;
+}
+
+.income-expense-div #Hexpense-div:hover{
+    transform: translateY(-5px);
+}
+
+.income-expense-div #Hincome-div:hover{
+    transform: translateY(-5px);
+}
+/* INCOME-EXPENSE CSS */
+
+/* CHARTS CSS */
+.income-expense-chart{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.income-expense-chart #expenseCategoryChartContainer{
+    height: fit-content;
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 1px grey;
+}
+
+#expenseCategoryChart{
+    margin: 0 auto;
+    height: 400px;
+}
+
+.income-expense-chart #incomeCategoryChartContainer{
+    height: fit-content;
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 1px grey;
+}
+
+#incomeCategoryChart{
+    margin: 0 auto;
+    height: 400px;
+}
+/* CHARTS CSS */
+
+/* SAVINGS TRANSACTION SECTION */
+.cards-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.cards-container .cards{
+    background: rgb(0,71,171);
+    background: linear-gradient(159deg, rgba(0,71,171,1) 0%, rgba(28,169,201,1) 100%);
+    width: 300px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px 1px grey;
+    
+}
+
+.cards-container .cards:hover{
+    transform: translateY(-5px);
+}
+/* SAVINGS TRANSACTION SECTION */
+
+/* BACK CSS */
+#back{
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#back #prev-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 10px;
+    width: 150px;
+    background: rgb(0,71,171);
+    background: linear-gradient(159deg, rgba(0,71,171,1) 0%, rgba(28,169,201,1) 100%);
+    border: none;
+    box-shadow: 2px 2px 1px 1px grey;
+}
+
+#back a{
+    text-decoration: none;
+}
+
+#back a #prev-btn{
+    color: white;
+    font-size: 20px;
+}
+
+#back #prev-btn:hover{
+    transform: scale(1.1);
+}
+/* BACK CSS */
+
+/* FOOTER CSS */
+.footer{
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+    margin-bottom: 50px;
+}
+/* FOOTER CSS */
+
+/* DARK MODE CSS */
+body.darktheme{
+    background-color: black;
+    color: white;
+}
+
+body.darktheme .hero-div #sub-div{
+    color: white;
+}
+
+body.darktheme #expenseCategoryChartContainer{
+    background-color: #1e1e1e;
+}
+
+body.darktheme #incomeCategoryChartContainer{
+    background-color: #1e1e1e;
+}
+/* DARK MODE CSS */
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:768px) {
+    .income-expense-div{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .income-expense-chart{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .income-expense-chart #expenseCategoryChartContainer{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-div #sub-div{
+        text-align: center;
+    }
+
+    .hero-div h3{
+        text-align: center;
+    }
+
+    .cards-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
