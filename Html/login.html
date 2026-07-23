@@ -27,5 +27,12 @@
         </form>
     </div>
 
+    <script>
+        document.getElementById("login-div").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+            window.location.href = "./dashboard.html";
+        });
+    </script>
+
 </body>
 </html>
